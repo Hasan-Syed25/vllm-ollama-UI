@@ -1,84 +1,13 @@
-# nextjs-vllm-ui
+# vllm-ollama-UI
 
-<div align="center">
-  <img src="ollama-nextjs-ui.gif">
-</div>
+A local copy of [yoziru's `nextjs-vllm-ui`](https://github.com/yoziru/nextjs-vllm-ui) (itself built on [jakobhoeg's `nextjs-ollama-llm-ui`](https://github.com/jakobhoeg/nextjs-ollama-llm-ui)) — a Next.js chat interface for locally-running vLLM/Ollama models, kept here for reference while experimenting with local-LLM tooling.
 
-<h1 align="center">
-  Fully-featured & beautiful web interface for vLLM & Ollama
-</h1>
+**This is not original work** — it's an unmodified copy of the upstream project, kept for personal use/reference rather than as an authored project.
 
-Get up and running with Large Language Models **quickly**, **locally** and even **offline**.
-This project aims to be the easiest way for you to get started with LLMs. No tedious and annoying setup required!
+## What it is
 
-# Features ✨
+A ChatGPT-style web UI (Next.js + Tailwind + shadcn-ui) for chatting with a locally-hosted vLLM or Ollama model, with local chat history, code syntax highlighting, and light/dark mode — no backend database required.
 
-- **Beautiful & intuitive UI:** Inspired by ChatGPT, to enhance similarity in the user experience.
-- **Fully local:** Stores chats in localstorage for convenience. No need to run a database.
-- **Fully responsive:** Use your phone to chat, with the same ease as on desktop.
-- **Easy setup:** No tedious and annoying setup required. Just clone the repo and you're good to go!
-- **Code syntax highligting:** Messages that include code, will be highlighted for easy access.
-- **Copy codeblocks easily:** Easily copy the highlighted code with one click.
-- **Chat history:** Chats are saved and easily accessed.
-- **Light & Dark mode:** Switch between light & dark mode.
+## Attribution
 
-# Preview
-
-https://github.com/jakobhoeg/nextjs-ollama-llm-ui/assets/114422072/08eaed4f-9deb-4e1b-b87a-ba17d81b9a02
-
-# Requisites ⚙️
-
-To use the web interface, these requisites must be met:
-
-1. Download [vLLM](https://docs.vllm.ai/en/latest/) and have it running. Or run it in a Docker container. 
-2. [Node.js](https://nodejs.org/en/download) (18+), [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) is required. 
-
-# Development 📖
-
-To install and run a local environment of the web interface, follow the instructions below.
-
-1. **Clone the repository to a directory on your pc via command prompt:**
-    ```
-    git clone https://github.com/yoziru/nextjs-vllm-ui
-    ```
-
-1. **Open the folder:**
-    ```
-    cd nextjs-vllm-ui
-    ```
-
-1. ** Rename the `.example.env` to `.env`:**
-    ```
-    mv .example.env .env
-    ```
-
-1. **If your instance of vLLM is NOT running on the default ip-address and port, change the variable in the .env file to fit your usecase:**
-    ```
-    VLLM_URL="http://localhost:8000"
-    VLLM_API_KEY="your-api-key"
-    VLLM_MODEL="llama3:8b"
-    VLLM_TOKEN_LIMIT=4096
-    ```
-
-1. **Install dependencies:**
-    ```
-    yarn install
-    ```
-
-1. **Start the development server:**
-    ```
-    yarn dev
-    ```
-
-1. **Go to [localhost:3000](http://localhost:3000) and start chatting with your favourite model!**
-
-
-# Tech stack
-
-[NextJS](https://nextjs.org/) - React Framework for the Web
-
-[TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
-
-[shadcn-ui](https://ui.shadcn.com/) - UI component built using Radix UI and Tailwind CSS
-
-[shadcn-chat](https://github.com/jakobhoeg/shadcn-chat) - Chat components for NextJS/React projects
+Original implementation: [yoziru/nextjs-vllm-ui](https://github.com/yoziru/nextjs-vllm-ui) and [jakobhoeg/nextjs-ollama-llm-ui](https://github.com/jakobhoeg/nextjs-ollama-llm-ui).
